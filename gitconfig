@@ -60,5 +60,10 @@
 [init]
   defaultBranch = master
 [user]
-	email = lambottesybille@gmail.com
-	name = Sybille Lambotte
+	email = 115070033+syboulette@users.noreply.github.com
+	name = Sybille
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
